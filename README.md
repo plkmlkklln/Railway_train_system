@@ -1,46 +1,43 @@
 # Railway Train System — Wiki
 
-Documentation du mod **Railway Train System** pour Arma Reforger : voies ferrées posées par spline, train de métro automatique sur lequel on peut monter, gares, passages à niveau, aiguillages et butoirs de fin de voie.
+Mod pour **Arma Reforger** : voies ferrées posées par spline, trains de métro sur lesquels on monte, gares avec quai et annonces, passages à niveau, aiguillages, attelage de wagons, borne d'appel et sécurité anti-collision. Tout fonctionne en multijoueur.
 
-Ce wiki explique comment ajouter le mod en dépendance à votre projet de carte, puis comment le mettre en place et le régler.
+## Par où commencer
 
-## Pages
+1. [Installer le mod](wiki/01-Installation.md) dans votre carte.
+2. Repérer [où sont les objets](wiki/02-Organisation-des-prefabs.md) : **tout ce qui se pose est dans `Prefabs/Railway/1_A_placer`**.
+3. [Poser une voie](wiki/03-Poser-la-voie.md) : une spline nommée + le générateur `WG_Rail_01`.
+4. Poser une [gare](wiki/06-Les-gares.md) et une [borne d'appel](wiki/05-Borne-d-appel.md) à côté.
+5. **Play** : appelez un train à la borne, montez, **Signal de départ**.
 
-| Page | Contenu |
-|---|---|
-| [Installation](wiki/01-Installation.md) | Ajouter le mod en dépendance à sa carte |
-| [Poser la voie](wiki/02-Poser-la-voie.md) | Spline, générateur de rails, courbes, butoirs |
-| [Le train](wiki/03-Le-train.md) | Poser le train et le relier à la voie |
-| [Les gares](wiki/04-Les-gares.md) | Arrêts automatiques |
-| [Passages à niveau](wiki/05-Passages-a-niveau.md) | Barrière et feux automatiques |
-| [Aiguillages](wiki/06-Aiguillages.md) | Embranchements et levier |
-| [Commandes en jeu](wiki/07-Commandes-en-jeu.md) | Boutons du wagon, places, levier |
-| [Réglages](wiki/08-Reglages.md) | Tous les paramètres et leurs valeurs par défaut |
-| [Dépannage](wiki/09-Depannage.md) | Problèmes courants et solutions |
+## Toutes les pages
 
-## En bref
+| | Page | Contenu |
+|---|---|---|
+| **Mise en place** | [Installation](wiki/01-Installation.md) | Ajouter le mod à sa carte |
+| | [Où trouver les objets](wiki/02-Organisation-des-prefabs.md) | Rangement des préfabs, quoi poser |
+| | [Poser la voie](wiki/03-Poser-la-voie.md) | Spline, générateur, courbes, butoirs, ponts |
+| | [Les trains](wiki/04-Les-trains.md) | Passagers et logistique, comportement |
+| | [Borne d'appel](wiki/05-Borne-d-appel.md) | Faire venir un train en jeu |
+| | [Les gares](wiki/06-Les-gares.md) | Quai, arrêts, annonce au haut-parleur |
+| | [Passages à niveau](wiki/07-Passages-a-niveau.md) | Barrière et feux automatiques |
+| | [Aiguillages](wiki/08-Aiguillages.md) | Embranchements et levier |
+| **En jeu** | [Commandes en jeu](wiki/09-Commandes-en-jeu.md) | Boutons, tableau de commande, places |
+| | [Attelage et convois](wiki/10-Attelage-et-convois.md) | Atteler, dételer, conduire un convoi |
+| | [Sécurité anti-collision](wiki/11-Securite-anti-collision.md) | Arrêt d'urgence automatique |
+| | [Train logistique](wiki/12-Train-logistique.md) | Coffre, ravitaillement, vider le wagon |
+| **Technique** | [Multijoueur](wiki/13-Multijoueur.md) | Comment le train est partagé |
+| | [Réglages](wiki/14-Reglages.md) | Tous les paramètres |
+| | [Dépannage](wiki/15-Depannage.md) | Problèmes courants |
 
-1. Ajouter **Railway Train System** aux dépendances de votre projet de carte.
-2. Tracer une spline, **lui donner un nom**, y glisser le générateur `WG_Rail_01`.
-3. Poser le wagon sur la voie et recopier le nom de la spline dans son composant `MRD_TrainComponent`.
-4. Poser des gares et des passages à niveau le long de la voie.
-5. Lancer **Play**.
+## Nouveautés
 
-## Fonctionnalités
-
-**Voie**
-- Rails générés le long d'une spline, qui suivent le terrain.
-- Choix automatique du morceau : droit de 15 m ou de 7 m, courbe de 51,5 m, ou rail pré-courbé de 25 à 400 m de rayon.
-- Butoir posé automatiquement à chaque bout de voie.
-- Aiguillage posé automatiquement quand une voie part d'une autre.
-
-**Train**
-- On marche à bord et on reste emporté pendant le trajet.
-- Conduite automatique : ralentit et s'arrête en gare, fait demi-tour au bout de la voie.
-- Portes automatiques, roues animées, vitres cassables, places assises.
-- Plafonniers la nuit, phares, vapeur à l'arrivée en gare.
-- Boutons dans le wagon : signal de départ, arrêt demandé, arrêt d'urgence.
-
-**Équipements**
-- Passage à niveau dont la barrière se ferme à l'approche du train.
-- Aiguillage à levier pour choisir la voie.
+- **Borne d'appel** : faire apparaître un train au plus près, après vérification que la voie est libre.
+- **Gare = quai** couvert avec **annonce au haut-parleur** à l'approche des trains.
+- **Attelage** de wagons en convoi, prise de commandes à chaque bout, bogies articulés dans les virages.
+- **Sécurité anti-collision** : arrêt d'urgence automatique devant un autre train.
+- **Train logistique** : coffre, ravitaillement, bouton « Vider le wagon dans la base ».
+- Tableau de commande : 5 vitesses, klaxon, sens de marche, portes, arrêt d'urgence.
+- Panneaux à **texte défilant**, **voyants de portes**, livrée bleue, logo et numéros de série.
+- Départ sur **signal** au lancement de la partie.
+- Préfabs **rangés** par usage.

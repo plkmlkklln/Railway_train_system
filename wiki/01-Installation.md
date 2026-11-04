@@ -1,18 +1,15 @@
 # Installation
 
-[← Accueil](../README.md)
+Railway Train System s'utilise comme **dépendance** de votre carte : votre carte s'appuie sur le mod, et les joueurs le téléchargent automatiquement avec elle.
 
-Railway Train System s'utilise comme **dépendance** de votre projet : votre carte s'appuie sur le mod, et les joueurs le téléchargent automatiquement avec elle.
+## Ajouter le mod à votre carte
 
-## Ajouter le mod en dépendance
-
-1. Abonnez-vous au mod **Railway Train System** sur le Workshop d'Arma Reforger (depuis le jeu ou depuis Workbench). Workbench le télécharge alors avec ses autres addons.
+1. Abonnez-vous à **Railway Train System** sur le Workshop d'Arma Reforger (depuis le jeu ou depuis Workbench).
 2. Ouvrez le projet de votre carte dans Workbench.
-3. Ouvrez *Project → Settings*, section **Dependencies**, et ajoutez **Railway_train_system**.
-   Identifiant du projet : `6AC6C5C085648081`.
+3. *Project → Settings*, section **Dependencies** : ajoutez **Railway_train_system** (identifiant `6AC6C5C085648081`).
 4. **Redémarrez Workbench** pour charger les scripts du mod.
 
-Si vous préférez éditer le fichier `addon.gproj` de votre carte à la main, la ligne des dépendances ressemble à ceci (gardez vos autres dépendances) :
+À la main, dans le fichier `addon.gproj` de votre carte (gardez vos autres dépendances) :
 
 ```
 Dependencies {
@@ -22,13 +19,17 @@ Dependencies {
 
 `58D0FB3206B6F859` est le jeu de base.
 
-## Vérifier
+## Essayer tout de suite
 
-Le mod contient un monde d'essai prêt à l'emploi : `Worlds/MRD_TestTrain/MRD_TestTrain.ent`.
-Ouvrez-le et lancez **Play** : le train démarre après 30 secondes.
+Le mod contient un monde d'essai : `Worlds/MRD_TestTrain/MRD_TestTrain.ent`.
+Ouvrez-le, lancez **Play**, montez dans le wagon et appuyez sur **Signal de départ**.
+
+> Depuis cette version, les trains **attendent le signal de départ** au lancement de la partie au lieu de partir seuls. Voir [Les trains](04-Les-trains.md).
 
 ## Publier sa carte
 
-À la publication de votre carte sur le Workshop, la dépendance est enregistrée avec elle : les joueurs reçoivent Railway Train System automatiquement.
+À la publication sur le Workshop, la dépendance est enregistrée avec la carte : les joueurs reçoivent le mod automatiquement.
 
-Suite : [Poser la voie →](02-Poser-la-voie.md)
+---
+
+ · [Accueil](../README.md) · [Où trouver les objets](02-Organisation-des-prefabs.md) →
