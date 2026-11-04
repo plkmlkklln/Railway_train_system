@@ -6,7 +6,8 @@ Tous les objets du mod sont rangés par usage. **Vous n'avez besoin que du dossi
 Prefabs/
   Railway/
     1_A_placer/                  ← à poser vous-même dans le monde
-      TrainStation.et              gare : quai couvert + haut-parleur
+      TrainStation.et              gare : quai couvert
+      StationSpeaker.et            haut-parleur d'annonce (facultatif)
       TrainSpawner.et              borne d'appel des trains
       LevelCrossing.et             passage à niveau complet
       RailEnd.et                   butoir (déjà posé automatiquement aux bouts)
@@ -34,6 +35,7 @@ Prefabs/
 | Un train | `SubwayTrain_Vehicle` ou `SubwayTrain_Cargo`, ou une borne d'appel | [Les trains](04-Les-trains.md) |
 | Faire venir un train en jeu | `TrainSpawner` | [Borne d'appel](05-Borne-d-appel.md) |
 | Une gare | `TrainStation` | [Les gares](06-Les-gares.md) |
+| Une annonce à l'arrivée des trains | `StationSpeaker` | [Les gares](06-Les-gares.md) |
 | Une barrière sur une route | `LevelCrossing` | [Passages à niveau](07-Passages-a-niveau.md) |
 | Un embranchement | une deuxième spline nommée | [Aiguillages](08-Aiguillages.md) |
 | Un pont | `RailBridgeZone` | [Poser la voie](03-Poser-la-voie.md) |

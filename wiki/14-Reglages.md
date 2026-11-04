@@ -25,7 +25,13 @@ Tous les réglages se font dans les propriétés des objets posés, sans toucher
 |---|---|
 | Durée de l'arrêt | 30 s |
 | Distance maximale entre la gare et la voie | 40 m |
+
+## Haut-parleur — `MRD_StationSpeakerComponent`
+
+| Champ | Défaut |
+|---|---|
 | Distance d'annonce | 150 m |
+| Distance minimale | 20 m |
 | Délai entre deux annonces | 60 s |
 
 ## Borne d'appel — `MRD_TrainSpawnerComponent`

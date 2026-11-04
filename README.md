@@ -33,7 +33,7 @@ Mod pour **Arma Reforger** : voies ferrées posées par spline, trains de métro
 ## Nouveautés
 
 - **Borne d'appel** : faire apparaître un train au plus près, après vérification que la voie est libre.
-- **Gare = quai** couvert avec **annonce au haut-parleur** à l'approche des trains.
+- **Gare = quai** couvert, et **haut-parleur à poser** qui annonce l'arrivée des trains.
 - **Attelage** de wagons en convoi, prise de commandes à chaque bout, bogies articulés dans les virages.
 - **Sécurité anti-collision** : arrêt d'urgence automatique devant un autre train.
 - **Train logistique** : coffre, ravitaillement, bouton « Vider le wagon dans la base ».

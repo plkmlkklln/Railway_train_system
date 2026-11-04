@@ -7,7 +7,7 @@
 | Borne : *Voie introuvable* | Nom de spline vide ou faux | Renseigner le nom sur la borne |
 | Borne : *Voie occupée* | Un wagon à moins de 22 m | Déplacer le train ou la borne |
 | Le train ne s'arrête pas en gare | Gare à plus de 40 m de la voie | Rapprocher la gare |
-| Pas d'annonce en gare | Train trop loin ou annonce récente | Attendre 60 s ; vérifier la distance d'annonce |
+| Pas d'annonce en gare | Pas de haut-parleur posé, train trop loin ou annonce récente | Poser un `StationSpeaker` ; attendre 60 s |
 | Les rails n'apparaissent pas | Générateur pas enfant de la spline | Glisser `WG_Rail_01` sur la spline |
 | Rails décalés après une modification | Voie non regénérée | Déplacer un point de la spline puis le remettre |
 | Pas d'aiguillage | Bout de la voie déviée à plus de 1,5 m, ou spline sans nom | Rapprocher le point, nommer les splines, regénérer la voie principale |

@@ -27,6 +27,8 @@ Même bouton, du côté attelé : **Dételer le wagon** (convoi à l'arrêt). Le
 
 Chaque wagon suit les rails avec ses propres bogies : les caisses pivotent l'une par rapport à l'autre, comme un vrai train, et l'écart reste constant.
 
+Chaque wagon a un **point d'accroche** à chaque bout, sur la face de l'attelage. À chaque instant, le wagon de tête recale les autres pour que les accroches se touchent : un wagon trop proche recule, un wagon trop loin avance.
+
 ## Limites
 
 - Les wagons doivent être sur la même spline (pas d'attelage à travers un aiguillage).
